@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>ỨNG DỤNG PASCAL_NGUYEN_HUE</title>
+<link href="PASCAL_NGUYEN_HUE/PASCAL_NGUYEN_HUE.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="PASCAL_NGUYEN_HUE">
+ <div id="tcateg">CHỌN DANH MỤC:</div>
+ <div id="quiz"><h3>CHÀO MỪNG BẠN ĐẾN VỚI ỨNG DỤNG PASCAL NGUYỄN HUỆ</h3><strong>Mức độ:</strong><ul><li>Mức độ 1 - dễ - Tập hợp những câu hỏi trắc nghiệm. Nhấp chuột để chọn phương án đúng.</li><li>Mức độ 2 - khó - Tập hợp những câu hỏi điền vào chỗ trống, gõ nội dung cần điền rồi nhấn trả lời.</li></ul>
+ <strong>SẮP XẾP CÂU HỎI</strong><ul>
+ <li>Thứ tự - Các câu hỏi sẽ bắt đầu theo thứ tự tùy chọn bên dưới</li>
+ <li>Ngẫu nhiên - Các câu hỏi sẽ được trộn một cách ngẫu nhiên và không lặp lại.</li></ul>&bull; <strong>Tính thời gian</strong> - Nếu chọn tùy chọn này thì mỗi câu hỏi bạn sẽ có 15s đễ trả lời.<br/>
+ <br/> - Nhấn nút "Bắt đầu" đễ làm bài và nút "Làm lại" đễ làm lại từ đầu .</div>
+ <div id="answered">
+  <h4>Câu hỏi thứ: <em id="nqansw">0</em> của <span id="ntotalq"></span></h4>
+  <span id="nca">0</span> - Câu trả lời đúng<br/>
+  <span id="nia">0</span> - Câu trả lời sai
+ </div>
+ <div id="qdata">
+  <label for="level1"><input type="radio" name="level" id="level1" checked="checked" />Mức độ 1</label>
+  <label for="level2"><input type="radio" name="level" id="level2" />Mức độ 2</label>
+  <h4>SẮP XẾP CÂU HỎI</h4>
+  <label for="qindex"><input type="radio" name="qmode" id="qindex" checked="checked" />Thứ tự</label>
+  <div id="startqn">From <input type="text" size="1" name="nquiz" id="nquiz" value="1" /> to <span id="totalq"></span></div>
+  <label for="qrandom"><input type="radio" name="qmode" id="qrandom" />Ngẫu nhiên</label>
+  <label for="qctimer"><input type="checkbox" id="qctimer" />Tính thời gian</label><hr/>
+  <button id="squiz">Bắt đầu</button>
+  <button id="treset" disabled="disabled">Làm lại</button>
+ </div>
+</div>
+<script type="text/javascript" src="PASCAL_NGUYEN_HUE/PASCAL_NGUYEN_HUE.js"></script>
+</body>
+</html>
